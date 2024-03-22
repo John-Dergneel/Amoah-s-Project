@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <title>Chapter 3 </title>
+
+        <style>
+
+.container{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+ font-family: "Arial", sans-serif;   
+ background-color: #444;
+
+}
+
+           
+            header {
+                background-color: #f8f6f6;
+    color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    z-index: 100;
+        }
+
+            .search{
+                position: relative;
+                left: 80%;
+}
+
+        
+.search input{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #444;
+    color: #fff;
+}
+
+.search button{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #444;
+    font-weight: bold;
+}
+
+nav{
+    background-color: #363636;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    right: 90%;
+    border-radius: 20px;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+   
+}
+
+nav ul li{
+    margin-right: 25px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #fdf9f9;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.4s ease;
+    
+}
+
+nav ul li a:hover{
+    color: #817f7f;
+}
+
+            
+            h3{color: rgb(248, 248, 250);
+               text-align: center;
+            }
+
+            form{float: right;}
+
+            .image{text-align: center;}
+
+            pre{text-align: center; font-size: large; color: rgb(252, 251, 251);}
+
+            .link{text-align: center;}
+
+            p{ font-size: larger;
+                color: rgb(252, 249, 249);}
+
+              
+        </style>
+       
+
+    </head>
+
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="search">
+                <input type="text" placeholder="search...">
+                <a href="https://www.google.com/search"> <button type="submit">Go</button> </a>
+            </div>
+    
+        <nav>
+            <ul>
+                <li> <a href="index.html" > Home </a> </li>
+            </ul>
+        </nav>
+            </header>
+
+<h3> Chronicles of Love and Time: Chapter 3</h3> <br>
+
+<form>
+    <label for="pageSelect"></label>
+    <select id="pageSelect" onchange="goToPage(this)">
+        <option value="">Select...</option>
+        <option value="page5.html">Page 3</option>
+        <option value="page3.html">Page 2</option>
+        <option value="page1.html">Page 1</option>
+    </select>
+</form>
+
+    
+<article>
+<p class="paragraph"><pre>
+
+And when the dust settles and the battle is won, they emerge victorious, their bond stronger than ever before. 
+With the hourglass restored to its former glory, Sir Edward faces a choice: return to his own time or stay with 
+Lady Sophia in the future.
+    
+But for Sir Edward, the decision is clear. With Lady Sophia by his side, he knows that there is nothing he cannot 
+overcome. And so, hand in hand, they set out on a new adventure, ready to face whatever challenges the future may hold.
+    
+For in the end, they know that as long as they have each other, they have everything they need to conquer the world. 
+And so, with hearts full of love and hope, they ride off into the sunset, ready to begin the next chapter of their 
+extraordinary journey together.
+
+In a climactic battle against the forces that seek to misuse the power of the hourglass, Sir 
+Edward and Lady Sophia emerge victorious. With the hourglass restored, Sir Edward must make 
+a choice: return to his own time or stay with Lady Sophia in the future.
+
+As they stand on the brink of a new beginning, Sir Edward and Lady Sophia realize that their 
+love is stronger than any force in the universe. With a smile and a knowing glance, they embrace 
+their destiny, knowing that together, they can overcome any obstacle that stands in their way.
+
+With the hourglass in hand, Sir Edward and Lady Sophia embark on a new adventure, traveling through 
+time and space in search of new horizons. Along the way, they encounter wonders beyond imagination 
+and face challenges that test their courage and resolve.
+
+But through it all, their love remains steadfast, a beacon of hope in a world filled with uncertainty. 
+As they journey through the ages, they witness the rise and fall of civilizations, the ebb and flow of 
+history itself.
+
+And yet, through every trial and tribulation, they emerge stronger than before, their bond forged in 
+the fires of adversity. For they know that as long as they have each other, they can conquer any 
+obstacle that comes their way.
+
+As they ride off into the sunset, hand in hand, they know that their journey is far from over. For 
+theirs is a love that transcends time and space, a love that will endure for eternity.
+
+And so, with hearts full of love and hope, they continue on their journey, knowing that no matter 
+where life may take them, they will always find their way back to each other. For in the end, love 
+truly is the greatest magic of all.
+
+With one last glance at the horizon, Sir Edward and Lady Sophia ride off into the unknown, ready to 
+face whatever adventures lie ahead. And as they disappear into the distance, their laughter echoes 
+through the ages, a testament to the power of love in a world filled with wonder and possibility.
+
+</pre></p>
+</article><br>
+
+<footer>
+<div class="link">
+<a href="page3.html" > <input type="submit" value="<" ></a>
+<a href="index.html" > <input type="submit" value=">" ></a>
+</div>
+
+<form action="mailto:amoahlordsakyi@gmail.com" name="comment"> 
+    <p>Please let us here your thoughts on the story</p>
+<textarea row="20" cols="40">
+    
+
+    
+</textarea><br>
+
+<input type="submit" value="send"/> 
+</form>
+
+
+<script>
+    function goToPage(select) {
+        var url = select.value;
+        if (url) {
+            window.location.href = url;
+        }
+    }
+</script>
+
+    </div>
+
+
+</body>
+</html>

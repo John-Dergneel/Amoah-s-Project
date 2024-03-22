@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <title> Chapter 1 </title>
+
+        <style>
+            
+.container{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+ font-family: "Arial", sans-serif;   
+ background-color: #444;
+
+}
+
+           
+            header {
+                background-color: #f8f6f6;
+    color: #fff;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    z-index: 100;
+        }
+
+            .search{
+                position: relative;
+                left: 80%;
+}
+
+        
+.search input{
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #444;
+    color: #fff;
+}
+
+.search button{
+    position: absolute;
+    top: 0;
+    right: 0%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #444;
+    font-weight: bold;
+}
+
+nav{
+    background-color: #363636;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    right: 90%;
+    border-radius: 20px;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+   
+}
+
+nav ul li{
+    color: #080707;
+    margin-right: 25px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #faf7f7;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.4s ease;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    color: #817f7f;
+}
+
+            
+            h3{color: rgb(248, 248, 250);
+               text-align: center;
+            }
+
+            form{float: right;}
+
+            .image{text-align: center;}
+
+            pre{text-align: center; font-size: large; color: rgb(252, 251, 251);}
+
+            .link{text-align: center;}
+
+            p{ font-size: larger;
+                color: rgb(252, 249, 249);}
+
+        </style>
+
+
+<body>
+<div class="container">
+    <header>
+        <div class="search">
+            <input type="text" placeholder="search...">
+            <a href="https://www.google.com/search"> <button type="submit">Go</button> </a>
+        </div>
+
+    <nav>
+        <ul>
+            <li> <a href="index.html" > Home </a> </li>
+        </ul>
+    </nav>
+</header>
+    
+    <h3> Chronicles of Love and Time: Page 1</h3>
+
+    <form>
+        <label for="pageSelect"></label>
+        <select id="pageSelect" onchange="goToPage(this)">
+            <option value="">Select...</option>
+            <option value="page5.html">Page 3</option>
+            <option value="page3.html">Page 2</option>
+            <option value="page1.html">Page 1</option>
+        </select>
+    </form>
+
+    
+        <div class="image">
+        <img src="image1.jpg" width="200px" height="400px">
+        </div>
+    
+    <p><pre>
+Introduction to the protagonist, a brave knight named Sir Edward, living in the 
+medieval kingdom of Eldoria. Sir Edward gazed out across the rolling hills of Eldoria, his 
+armor glinting in the golden light of the setting sun. As the wind whispered through the ancient oaks, he 
+couldn't shake the feeling of longing that tugged at his heart.
+
+"Another day, another battle," Sir Edward murmured to himself, adjusting the grip on 
+his trusty sword, Excalibur. "But what use is valor without love?"
+
+Around him, his fellow knights prepared for the impending skirmish, their laughter 
+mingling with the clatter of armor and the stamping of horses. But for Sir Edward, there 
+was a yearning that went beyond the thrill of battle—a desire for a love that would stand the test of time.
+
+"Is there such a love to be found in this world of chaos and strife?" he wondered aloud, his 
+voice lost am idst the bustle of the encampment. But deep down, he knew that his quest for love 
+was as noble as any battle he had ever fought.
+
+Sir Edward's thoughts drifted to the tales of romance and chivalry that had captured his 
+imagination as a young squire. Stories of knights who braved untold dangers and crossed vast 
+kingdoms to win the hearts of their beloveds. He dreamed of finding a love that echoed through the 
+ages, a love that would inspire poets and bards for generations to come.
+
+As the first stars began to twinkle in the night sky, Sir Edward made a silent vow to 
+himself: to never give up on love, no matter the challenges that lay ahead. For in the 
+heart of even the bravest knight, there burned a flame of romance that could never be extinguished.  
+
+With resolve in his heart and Excalibur at his side, Sir Edward rode forth into the 
+gathering darkness, ready to face whatever fate had in store. Little did he know that his 
+journey would soon take an unexpected turn, leading him down a path where love and destiny 
+intertwined in ways he could never have imagined.
+
+One stormy night, while on a quest to protect the kingdom from invaders, Sir Edward 
+stumbles upon an ancient artifact hidden deep in the forest. The rain pelted down 
+relentlessly as Sir Edward navigated the dense underbrush, his senses alert for any 
+sign of danger. Lightning flashed across the sky, illuminating the ancient trees like 
+sentinels of the past.
+
+Suddenly, his foot struck something solid beneath the undergrowth—a glimmer of gold caught 
+his eye. With a sense of anticipation, Sir Edward reached down and unearthed the artifact 
+from its mossy hiding place. It was an hourglass, its surface etched with intricate runes 
+that seemed to pulse with an otherworldly energy.
+
+Intrigued by the hourglass, Sir Edward carefully examined it, marveling at its craftsmanship. 
+Could this be the key to unlocking the mysteries of love and time? With a sense of determination, he 
+tucked the artifact securely into his pack, knowing that his destiny was about to take a dramatic turn.
+
+As Sir Edward continued on his journey, the storm began to subside, and a sense of anticipation filled 
+the air. Little did he know that the hourglass would soon lead him on an adventure beyond his wildest dreams.
+</pre></p>
+
+<div class="link">
+    <a href="page3.html" > <input type="submit" value=">" ></a>
+    </div>
+
+    <script>
+        function goToPage(select) {
+            var url = select.value;
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
